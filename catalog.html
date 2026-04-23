@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog Sportswear | Vitesse Paris</title>
+  <meta name="description" content="Explore the Vitesse Paris catalog with 20 popular sportswear products across running, training, and urban lifestyle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root { --brand-cobalt: #0b3b8f; --brand-red: #e23d28; }
+    body { font-family: 'Barlow', sans-serif; background: #f8fafc; }
+  </style>
+</head>
+<body class="text-slate-900">
+  <header class="border-b border-slate-200 bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 md:px-6" aria-label="Main navigation">
+      <a href="index.html" class="text-2xl font-extrabold tracking-tight text-[var(--brand-cobalt)]">Vitesse Paris</a>
+      <form class="hidden flex-1 md:block" role="search" aria-label="Search products">
+        <label for="catalog-search" class="sr-only">Search</label>
+        <input id="catalog-search" type="search" placeholder="Search products..." class="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-sm outline-none ring-[var(--brand-cobalt)] focus:ring-2">
+      </form>
+      <a href="checkout.html" class="hidden rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold hover:border-slate-500 md:inline-block">My Account</a>
+      <details class="ml-auto md:hidden">
+        <summary class="cursor-pointer list-none rounded-md border border-slate-300 px-3 py-2 text-sm font-semibold">Menu</summary>
+        <div class="absolute right-4 mt-2 w-56 rounded-xl border border-slate-200 bg-white p-3 shadow-xl">
+          <a href="index.html" class="block rounded-md px-2 py-2 hover:bg-slate-100">Home</a>
+          <a href="catalog.html" class="block rounded-md px-2 py-2 hover:bg-slate-100">Catalog</a>
+          <a href="product.html" class="block rounded-md px-2 py-2 hover:bg-slate-100">Product</a>
+          <a href="cart.html" class="block rounded-md px-2 py-2 hover:bg-slate-100">Cart</a>
+        </div>
+      </details>
+      <ul class="hidden items-center gap-4 text-sm font-semibold md:flex">
+        <li><a href="product.html" class="hover:text-[var(--brand-cobalt)]">Product</a></li>
+        <li><a href="cart.html" class="hover:text-[var(--brand-cobalt)]">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-10 md:px-6">
+    <h1 class="text-4xl font-extrabold">Catalog Sportswear</h1>
+    <p class="mt-2 text-slate-600">Vitesse Paris performance collection.</p>
+
+    <section class="mt-8 rounded-2xl border border-slate-200 bg-white p-4 md:p-5" aria-label="Filter bar">
+      <div class="grid gap-4 md:grid-cols-2">
+        <div>
+          <label for="category" class="mb-2 block text-sm font-semibold">Filter by Category</label>
+          <select id="category" class="w-full rounded-xl border border-slate-300 px-3 py-2">
+            <option>All categories</option>
+            <option>Footwear</option>
+            <option>Shirts</option>
+            <option>Pants</option>
+            <option>Accessories</option>
+          </select>
+        </div>
+        <div>
+          <label for="size" class="mb-2 block text-sm font-semibold">Filter by Size</label>
+          <select id="size" class="w-full rounded-xl border border-slate-300 px-3 py-2">
+            <option>All sizes</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8" aria-label="Product grid">
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport shoe 01" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Racer 01</h2><p class="text-slate-600">149 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport shoe 02" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Racer 02</h2><p class="text-slate-600">152 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Performance t-shirt 03" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Aeroline Tee</h2><p class="text-slate-600">48 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Performance t-shirt 04" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Sprint Tee</h2><p class="text-slate-600">50 USD</p></a></article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Legging training 05" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Flow Legging</h2><p class="text-slate-600">79 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Training pants 06" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Track Pant</h2><p class="text-slate-600">94 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport jacket 07" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Urban Wind Shell</h2><p class="text-slate-600">129 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport jacket 08" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Metro Warm Up</h2><p class="text-slate-600">119 USD</p></a></article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Training shorts 09" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Sprint Short</h2><p class="text-slate-600">44 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Training shorts 10" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Interval Short</h2><p class="text-slate-600">46 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Hoodie 11" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Club Hoodie</h2><p class="text-slate-600">89 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Hoodie 12" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Run Hoodie</h2><p class="text-slate-600">92 USD</p></a></article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Performance cap 13" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Pulse Cap</h2><p class="text-slate-600">35 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport socks 14" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Pace Socks</h2><p class="text-slate-600">18 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Gym bag 15" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Commuter Duffel</h2><p class="text-slate-600">98 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sports bottle 16" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Hydra Bottle</h2><p class="text-slate-600">29 USD</p></a></article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sports bra 17" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Aero Bra</h2><p class="text-slate-600">55 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Sport tank 18" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Stride Tank</h2><p class="text-slate-600">39 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Trail shoe 19" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Trail Flux</h2><p class="text-slate-600">168 USD</p></a></article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-3"><a href="product.html" class="block"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Tennis-shirt-lacoste.jpg" alt="Waterproof jacket 20" class="h-40 w-full rounded-xl object-cover"><h2 class="mt-3 font-bold">Rain Shield</h2><p class="text-slate-600">139 USD</p></a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 md:grid-cols-3 md:px-6">
+      <section><h2 class="text-sm font-extrabold uppercase tracking-widest text-slate-500">Categories</h2><ul class="mt-3 space-y-2"><li>Footwear</li><li>Shirts</li><li>Pants</li><li>Accessories</li></ul></section>
+      <section><h2 class="text-sm font-extrabold uppercase tracking-widest text-slate-500">Legal</h2><ul class="mt-3 space-y-2"><li>Terms and Conditions</li><li>Privacy Policy</li><li>About the Brand</li></ul></section>
+      <section><h2 class="text-sm font-extrabold uppercase tracking-widest text-slate-500">Contact</h2><ul class="mt-3 space-y-2"><li>hello@vitesseusa.com</li><li>Instagram</li><li>TikTok</li></ul></section>
+    </div>
+  </footer>
+</body>
+</html>

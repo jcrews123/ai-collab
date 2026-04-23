@@ -5,7 +5,6 @@
 - No React, Vue, Angular, or any JavaScript framework.
 - No component libraries (e.g., shadcn, MUI, Bootstrap).
 - No TypeScript or JSX.
-- JavaScript is allowed only for minimal native browser interactions (e.g., toggling a mobile menu class) — keep it to an absolute minimum.
 - Use semantic HTML5 elements for accessibility and SEO (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<article>`, etc.).
 
 ---
